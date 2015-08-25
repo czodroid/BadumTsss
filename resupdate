@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# Filename: resupdate
+# Copyright (C) 2012 Olivier Sirol <czo@free.fr>
+# License: GPL (http://www.gnu.org/copyleft/gpl.html)
+# Started: Sept 2012
+# Last Change: mardi 25 août 2015, 12:49
+# Edit Time: 0:51:15
+# Description:
+#
+# $Id:$
+#
+
+
+convert store/icon.png -geometry 48x48 app/src/main/res/mipmap-mdpi/ic_launcher.png
+convert store/icon.png -geometry 72x72 app/src/main/res/mipmap-hdpi/ic_launcher.png
+convert store/icon.png -geometry 96x96 app/src/main/res/mipmap-xhdpi/ic_launcher.png
+convert store/icon.png -geometry 144x144 app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+convert store/icon.png -geometry 192x192 app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
