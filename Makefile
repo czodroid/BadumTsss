@@ -2,8 +2,8 @@
 # Author: Olivier Sirol <czo@free.fr>
 # License: GPL-2.0 (http://www.gnu.org/copyleft)
 # File Created: Jan 2012
-# Last Modified: lundi 18 avril 2022, 18:50
-# Edit Time: 2:55:38
+# Last Modified: lundi 18 avril 2022, 19:21
+# Edit Time: 2:55:52
 # Description:
 #
 # $Id: $
@@ -16,7 +16,7 @@ release:
 	@echo "<- done!"
 
 scp:
-	scp app/build/outputs/apk/release/badumtsss-`date +%Y%m%d`-release.apk  czo@ananas:/tank/data/czo/www/ananas.czo.wf/intranet/download/apk
+	scp app/build/outputs/apk/release/org.czo.badumtsss-`date +%Y%m%d`-release.apk  czo@ananas:/tank/data/czo/www/ananas.czo.wf/intranet/download/apk
 	@echo "<- done!"
 
 debug:
