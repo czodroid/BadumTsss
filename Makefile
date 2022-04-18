@@ -1,9 +1,9 @@
 # Filename: Makefile
 # Author: Olivier Sirol <czo@free.fr>
-# License: GPL-2.0
+# License: GPL-2.0 (http://www.gnu.org/copyleft)
 # File Created: Jan 2012
-# Last Modified: vendredi 02 août 2019, 20:07
-# Edit Time: 2:53:34
+# Last Modified: lundi 18 avril 2022, 18:50
+# Edit Time: 2:55:38
 # Description:
 #
 # $Id: $
@@ -13,11 +13,14 @@ all: release
 
 release:
 	./gradlew assembleRelease
-	cp app/build/outputs/apk/release/app-release.apk ../badumtsss-release-`date +%Y%m%d`.apk
+	@echo "<- done!"
+
+scp:
+	scp app/build/outputs/apk/release/badumtsss-`date +%Y%m%d`-release.apk  czo@ananas:/tank/data/czo/www/ananas.czo.wf/intranet/download/apk
 	@echo "<- done!"
 
 debug:
-	./gradlew assembleDebug
+	./gradlew assembleDebug --warning-mode all
 	@echo "<- done!"
 
 clean:
