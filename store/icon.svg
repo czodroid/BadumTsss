@@ -8,7 +8,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg5728"
-   sodipodi:docname="button-push.svg"
+   sodipodi:docname="icon.svg"
    viewBox="0 0 512.00001 512"
    version="1.1"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
@@ -190,8 +190,8 @@
      showgrid="false"
      borderopacity="1.0"
      inkscape:current-layer="layer1"
-     inkscape:cx="254.94149"
-     inkscape:cy="227.2798"
+     inkscape:cx="271.08871"
+     inkscape:cy="226.16016"
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1440"
@@ -205,7 +205,7 @@
      transform="translate(-218.94,-216.01)">
     <g
        id="g80"
-       transform="translate(3.5164407,6.6614189)">
+       transform="matrix(1.0985907,0,0,1.0985907,-42.961538,-39.217623)">
       <circle
          id="path4399"
          style="fill:url(#radialGradient5882);stroke-width:1.51262"
