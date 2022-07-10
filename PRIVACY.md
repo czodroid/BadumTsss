@@ -2,7 +2,7 @@
 
 ## General
 
-BadumTsss app just play a sound !
+BadumTsss app only plays a sound!
 
 ## Information being collected
 
