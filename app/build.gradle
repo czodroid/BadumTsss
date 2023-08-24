@@ -58,6 +58,7 @@ android {
             }
         }
     }
+    namespace 'org.czo.badumtsss'
 
     //tasks.withType(JavaCompile) { options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" }
 
