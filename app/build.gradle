@@ -2,8 +2,8 @@
 // Author: Olivier Sirol <czo@free.fr>
 // License: GPL-2.0 (http://www.gnu.org/copyleft)
 // File Created: avril 2012
-// Last Modified: jeudi 05 mai 2022, 18:20
-// Edit Time: 1:54:45
+// Last Modified: Saturday 26 August 2023, 14:33
+// Edit Time: 1:54:56
 // Description: app build.gradle
 
 apply plugin: 'com.android.application'
@@ -22,6 +22,7 @@ int minutesSinceEpoch = System.currentTimeMillis() / 1000 / 60
 String buildDateYMD = new java.text.SimpleDateFormat("yyyyMMdd").format(new java.util.Date(System.currentTimeMillis()))
 
 android {
+    namespace 'org.czo.badumtsss'
     compileSdk 33
     defaultConfig {
         applicationId "org.czo.badumtsss"
@@ -58,7 +59,6 @@ android {
             }
         }
     }
-    namespace 'org.czo.badumtsss'
 
     //tasks.withType(JavaCompile) { options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" }
 
