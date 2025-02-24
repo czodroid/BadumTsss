@@ -2,14 +2,14 @@
 // Author: Olivier Sirol <czo@free.fr>
 // License: GPL-2.0 (http://www.gnu.org/copyleft)
 // File Created: avril 2012
-// Last Modified: Tuesday 13 August 2024, 16:02
-// Edit Time: 1:56:22
+// Last Modified: Monday 24 February 2025, 19:37
+// Edit Time: 2:11:47
 // Description: app build.gradle
 
 apply plugin: 'com.android.application'
 
 println("")
-def keystorePropertiesFile = rootProject.file("local.properties")
+def keystorePropertiesFile = rootProject.file("keystore.properties")
 def keystoreProperties = new Properties()
 def canSign = false
 if (keystorePropertiesFile.exists()) {
@@ -44,10 +44,10 @@ android {
     if (canSign) {
         signingConfigs {
             release {
-                storeFile file(keystoreProperties['key.store'])
-                storePassword keystoreProperties['key.store.password']
-                keyAlias keystoreProperties['key.alias']
-                keyPassword keystoreProperties['key.alias.password']
+                storeFile file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
                 v1SigningEnabled true
                 v2SigningEnabled true
             }
