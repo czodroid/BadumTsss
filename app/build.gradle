@@ -2,8 +2,8 @@
 // Author: Olivier Sirol <czo@free.fr>
 // License: GPL-2.0 (http://www.gnu.org/copyleft)
 // File Created: avril 2012
-// Last Modified: Monday 24 February 2025, 19:37
-// Edit Time: 2:11:47
+// Last Modified: Monday 12 May 2025, 17:59
+// Edit Time: 2:12:53
 // Description: app build.gradle
 
 apply plugin: 'com.android.application'
@@ -25,11 +25,11 @@ def gitVersionName = "git -C ${rootDir} describe --tags --long".execute().text.t
 
 android {
     namespace 'org.czo.badumtsss'
-    compileSdk 34
+    compileSdk 35
     defaultConfig {
         applicationId "org.czo.badumtsss"
         minSdkVersion 9
-        targetSdkVersion 34
+        targetSdkVersion 35
         versionCode minutesSinceEpoch
 
         println("-> gitVersionName:   " + gitVersionName)
